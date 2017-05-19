@@ -1,4 +1,4 @@
-# Ne' richtig korrekte App für Versicherungen
+# I bims, 1 nice App
 
 ### WHat to do?
 
