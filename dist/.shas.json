@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "app.js",
-        "sha": "f8b4e82361e6950b27dfc97ce426ce1f34d08b08"
+        "sha": "c86a911d1f15ee3c315a6b7014c06888b06ac4f9"
       }
     ],
-    "outputSha": "ee2dbf9960c557de3d67e3de4eb1d11aba159495",
+    "outputSha": "642257841ba97ec8a4dfb12f80845f74aba33fdb",
     "input": "app.js",
     "output": [
       "app.js.map",
@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "da51e5c59e249ad14ce43313c987b6b6684346c9"
+        "sha": "21953c062a45399e94e45f1ffa603fa2de83c739"
       }
     ],
-    "outputSha": "1b6b98ae0f85c19f6424e745ebd964683d5787b1",
+    "outputSha": "6b979aa309e3a0b883e440726ac78042664d7569",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -33,28 +33,14 @@
     "inputSha": [
       {
         "file": "scripts/main.babel.js",
-        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+        "sha": "ab3e8516a3c347faeadc73dc261d2ac1bd14be9e"
       }
     ],
-    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "outputSha": "702d54fc590e06ca65b6878a69eae3d2229d60a7",
     "input": "scripts/main.babel.js",
     "output": [
       "scripts/main.js.map",
       "scripts/main.js"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/_styles.scss",
-        "sha": "174b3bf32994760feac3599a001d302c352b958b"
-      }
-    ],
-    "outputSha": "174b3bf32994760feac3599a001d302c352b958b",
-    "input": "styles/_styles.scss",
-    "output": [
-      "styles/_styles.scss"
     ]
   },
   {
@@ -75,14 +61,14 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_variables.scss",
-        "sha": "07e1f05581d5532af2ae5bbd0674c9bb2e141995"
+        "file": "styles/_styles.scss",
+        "sha": "b9e75c6e762503f4030afda3009dade1330a3dfb"
       }
     ],
-    "outputSha": "07e1f05581d5532af2ae5bbd0674c9bb2e141995",
-    "input": "styles/_variables.scss",
+    "outputSha": "b9e75c6e762503f4030afda3009dade1330a3dfb",
+    "input": "styles/_styles.scss",
     "output": [
-      "styles/_variables.scss"
+      "styles/_styles.scss"
     ]
   },
   {
@@ -97,6 +83,20 @@
     "input": "styles/_typo.scss",
     "output": [
       "styles/_typo.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_variables.scss",
+        "sha": "1ada9a972d4fa2d28693db4a322b1c3cbc902fa1"
+      }
+    ],
+    "outputSha": "1ada9a972d4fa2d28693db4a322b1c3cbc902fa1",
+    "input": "styles/_variables.scss",
+    "output": [
+      "styles/_variables.scss"
     ]
   },
   {
@@ -116,10 +116,14 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "174b3bf32994760feac3599a001d302c352b958b"
+        "sha": "b9e75c6e762503f4030afda3009dade1330a3dfb"
+      },
+      {
+        "file": "styles/_variables.scss",
+        "sha": "1ada9a972d4fa2d28693db4a322b1c3cbc902fa1"
       }
     ],
-    "outputSha": "efa3740b99db89d3fe1281b0181c3d2e09e70dbf",
+    "outputSha": "8fbfece6c9d6929a32243df70462c616aa636a74",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
