@@ -37,6 +37,15 @@ body {
 	}
 }
 
+.wrapper {
+	&> .is-12 {
+		height: 85vh;
+		.wrapper--centered {
+			padding-top: 15vh;
+		}
+	}
+}
+
 .button {
 	display: inline-block;
 	border-radius: 3px;
