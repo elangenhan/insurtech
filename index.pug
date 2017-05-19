@@ -6,17 +6,18 @@ html
         meta(name='description', content='')
         meta(name='viewport', content='width=device-width')
 
-        link(rel='stylesheet', href='https://unpkg.com/griddd@1.0.2/dist/griddd.min.css')
         link(rel='stylesheet', href='styles/main.css')
         link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
     body
-        h1 Hello world!
-        p We are ready to go.
 
-        .container
-            .columns
-                .is-4 Eins
-                .is-8 Zwei 
-                    i.fa.fa-address-book-o
+        .container.asktom
+            .columns.header.header--light
+                .end
+                    ul
+                        li One
+                        li Two
+            .columns.wrapper
+                p My Body
+
 
         script(src='scripts/main.js')
