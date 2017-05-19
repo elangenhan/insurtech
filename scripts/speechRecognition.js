@@ -3,8 +3,6 @@ const recognition = new SpeechRecognition();
 
 
 function speech(callback){
-    console.log("speech function started");
-
     recognition.addEventListener('result', e => {
         let transcript = Array.from(e.results)
         .map(result => result[0])
@@ -15,7 +13,5 @@ function speech(callback){
             callback(transcript);
         }
     });
-
-//    recognition.addEventListener('end', recognition.start);
     recognition.start();
 }
