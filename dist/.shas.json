@@ -1,0 +1,75 @@
+[
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "app.js",
+        "sha": "f8b4e82361e6950b27dfc97ce426ce1f34d08b08"
+      }
+    ],
+    "outputSha": "ee2dbf9960c557de3d67e3de4eb1d11aba159495",
+    "input": "app.js",
+    "output": [
+      "app.js.map",
+      "app.js"
+    ]
+  },
+  {
+    "type": "pug@2.0.0-rc.1::map::minify",
+    "inputSha": [
+      {
+        "file": "index.pug",
+        "sha": "6db59d7fa9c169f104cee3a22dc7525591c1a46a"
+      }
+    ],
+    "outputSha": "fa71d3500979153418bc573506786fafe2e50ac9",
+    "input": "index.pug",
+    "output": [
+      "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+      }
+    ],
+    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "public/index.html",
+        "sha": "db10316f7e10b8e4352f614be0f3ce996fdd8f67"
+      }
+    ],
+    "outputSha": "3eb095211c08d350f0357254cd96a54624ca3d6a",
+    "input": "public/index.html",
+    "output": [
+      "public/index.html"
+    ]
+  },
+  {
+    "type": "node-sass@4.5.3::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/main.scss",
+        "sha": "25b93492038c4fae02cbeb7cc61b7730ac1cc8aa"
+      }
+    ],
+    "outputSha": "8927ab5318a3fec1eacc65cba72e6a5815fef37a",
+    "input": "styles/main.scss",
+    "output": [
+      "styles/main.css.map",
+      "styles/main.css"
+    ]
+  }
+]

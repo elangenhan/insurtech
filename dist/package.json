@@ -1,0 +1,39 @@
+{
+  "name": "insurtech",
+  "version": "1.0.0",
+  "description": "Mega nice app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pingy dev",
+    "export": "pingy export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elangenhan/insurtech.git"
+  },
+  "keywords": [
+    "Insurtech"
+  ],
+  "author": "elang, nso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elangenhan/insurtech/issues"
+  },
+  "homepage": "https://github.com/elangenhan/insurtech#readme",
+  "dependencies": {
+    "cf-deployment-tracker-client": "^0.1.3",
+    "commander": "^2.9.0",
+    "express": "^4.15.3",
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.16.2",
+    "watson-developer-cloud": "^2.31.1"
+  },
+  "devDependencies": {
+    "@pingy/cli": "^0.6.6",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.1"
+  }
+}

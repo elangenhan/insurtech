@@ -1,0 +1,2 @@
+var express=require("express"),app=express(),port=process.env.PORT||3e3;app.use(express.static(__dirname+"/dist")),app.get("/sayHello",function(e,r){var p=e.query.user_name;r.end("Hello "+p+"!")}),app.listen(port),console.log("Listening on port ",port),require("cf-deployment-tracker-client").track();
+//# sourceMappingURL=app.js.map
