@@ -33,10 +33,10 @@
     "inputSha": [
       {
         "file": "scripts/main.babel.js",
-        "sha": "1aa4a8842cb00e7dae8fce7991ce743e036e0983"
+        "sha": "b16bad1a86c9f90ab9a90d21acecc68f707cf3b6"
       }
     ],
-    "outputSha": "a166d1ff865c0942257cc96f5ab05012dac92ad4",
+    "outputSha": "1a9c08249fbba040794af06736bdc7180c4de1bc",
     "input": "scripts/main.babel.js",
     "output": [
       "scripts/main.js.map",

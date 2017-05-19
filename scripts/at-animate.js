@@ -7,6 +7,7 @@ function init() {
 }
 
 function micClick() {
+    speechClick();
     $("#micBtn").addClass('clicked');
     $(".footer").addClass('active');
     $(".footer").show('fade', 5000);
