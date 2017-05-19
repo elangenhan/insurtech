@@ -19,13 +19,28 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "a1d2208bf614b9c5863b52303101f2bd9b37e2e8"
+        "sha": "da51e5c59e249ad14ce43313c987b6b6684346c9"
       }
     ],
-    "outputSha": "3825dac235703f52e73faa47dee767188882adde",
+    "outputSha": "1b6b98ae0f85c19f6424e745ebd964683d5787b1",
     "input": "index.pug",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+      }
+    ],
+    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
     ]
   },
   {
@@ -33,13 +48,27 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "c85d58962167c8068375b57905305cab97d94eb9"
+        "sha": "174b3bf32994760feac3599a001d302c352b958b"
       }
     ],
-    "outputSha": "c85d58962167c8068375b57905305cab97d94eb9",
+    "outputSha": "174b3bf32994760feac3599a001d302c352b958b",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_grid.scss",
+        "sha": "1d8008173889f472aaf68c7627ce25d4b4aea29b"
+      }
+    ],
+    "outputSha": "1d8008173889f472aaf68c7627ce25d4b4aea29b",
+    "input": "styles/_grid.scss",
+    "output": [
+      "styles/_grid.scss"
     ]
   },
   {
@@ -57,41 +86,44 @@
     ]
   },
   {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_typo.scss",
+        "sha": "b7cff66d73b433182c513be81c3d11b0ed99efb9"
+      }
+    ],
+    "outputSha": "b7cff66d73b433182c513be81c3d11b0ed99efb9",
+    "input": "styles/_typo.scss",
+    "output": [
+      "styles/_typo.scss"
+    ]
+  },
+  {
     "type": "node-sass@4.5.3::map::minify",
     "inputSha": [
       {
         "file": "styles/main.scss",
-        "sha": "28a64cf28ca0fda5b4f15cc7f0c3d622aea0c1e2"
+        "sha": "a3a77fd099229315d75e2481d4c63a1d1fdb02c8"
+      },
+      {
+        "file": "styles/_grid.scss",
+        "sha": "1d8008173889f472aaf68c7627ce25d4b4aea29b"
+      },
+      {
+        "file": "styles/_typo.scss",
+        "sha": "b7cff66d73b433182c513be81c3d11b0ed99efb9"
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "c85d58962167c8068375b57905305cab97d94eb9"
-      },
-      {
-        "file": "styles/_variables.scss",
-        "sha": "07e1f05581d5532af2ae5bbd0674c9bb2e141995"
+        "sha": "174b3bf32994760feac3599a001d302c352b958b"
       }
     ],
-    "outputSha": "8927ab5318a3fec1eacc65cba72e6a5815fef37a",
+    "outputSha": "efa3740b99db89d3fe1281b0181c3d2e09e70dbf",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
       "styles/main.css"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
-      }
-    ],
-    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
     ]
   }
 ]
