@@ -1,6 +1,7 @@
 body {
 	background-color: $primary;
 	color: $fontcolor-light;
+	transition: all 2s;
 }
 
 .black {
@@ -20,7 +21,7 @@ body {
 }
 
 .header {
-	height: 5rem;
+	min-height: 5rem;
 
 	&.header--light {
 		background-color: #ccc;
@@ -34,6 +35,33 @@ body {
 
 	&.header--light-success {
 		color: green;
+	}
+}
+
+.wrapper {
+	&> .is-12 {
+		height: 85vh;
+		.wrapper--centered {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: all 1.5s;
+
+			&.clicked {
+				top: 80% !important;
+				left: 95% !important;
+
+				h3 {
+					opacity: 0;
+				}
+				.fa-stack {
+					transition: font-size 1.5s;
+					font-size: 2em;
+				}
+			}
+		}
 	}
 }
 
@@ -51,4 +79,23 @@ body {
 	&.button--state-danger {
 		color: #900;
 	}
+}
+
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 10000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
 }
