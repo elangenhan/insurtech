@@ -32,6 +32,36 @@
     "type": "::map::minify",
     "inputSha": [
       {
+        "file": "scripts/at-animate.js",
+        "sha": "f1a1fe2086e932cf18a8a3f7ee304e034a311d83"
+      }
+    ],
+    "outputSha": "55b9a1ee46b7e5711a0f78f6ab89d1de5012db04",
+    "input": "scripts/at-animate.js",
+    "output": [
+      "scripts/at-animate.js.map",
+      "scripts/at-animate.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "21124cdcff2aeb8661a6ae17b52ebe0daabfea7e"
+      }
+    ],
+    "outputSha": "971c29d2398d3371164c2bdbfa798249ad0c51b3",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
         "file": "styles/_grid.scss",
         "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
       }
@@ -113,36 +143,6 @@
     "output": [
       "styles/main.css.map",
       "styles/main.css"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/at-animate.js",
-        "sha": "f1a1fe2086e932cf18a8a3f7ee304e034a311d83"
-      }
-    ],
-    "outputSha": "55b9a1ee46b7e5711a0f78f6ab89d1de5012db04",
-    "input": "scripts/at-animate.js",
-    "output": [
-      "scripts/at-animate.js.map",
-      "scripts/at-animate.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "b16bad1a86c9f90ab9a90d21acecc68f707cf3b6"
-      }
-    ],
-    "outputSha": "1a9c08249fbba040794af06736bdc7180c4de1bc",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
     ]
   }
 ]

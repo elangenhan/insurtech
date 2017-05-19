@@ -4,19 +4,25 @@ helloWorld();
 
 function speechClick(){
     speech(function(text){
+        sendText(text);
         console.log(text);
-        $.ajax({
-            type: "POST",
-            url: "/conversation",
-            data: {
-                text: text
-            },
-            success: function(res){
-                console.log(res);
-            },
-            error: function(err){
-                console.log(err);
-            }
-        });
+    });
+}
+
+function sendText(text){
+    $.ajax({
+        type: "POST",
+        url: "/conversation",
+        data: {text: text},
+        success: function(res){
+            var resp = res.output.text[0];
+            console.log(resp);
+
+            var msg = new SpeechSynthesisUtterance(resp);
+            window.speechSynthesis.speak(resp);
+        },
+        error: function(err){
+            console.log(err);
+        }
     });
 }
