@@ -1,5 +1,6 @@
 body {
-	background-color: #00A894;
+	background-color: $primary;
+	color: $fontcolor-light;
 }
 
 .container {
@@ -19,14 +20,16 @@ body {
 	}
 
 	&.header--dark {
-		background-color: #444;
-		color: #fff;
+		background-color: $secondary;
+		color: $fontcolor-light;
 	}
 
 	&.header--light-success {
 		color: green;
 	}
 }
+
+.wrapper p
 
 
 .button {
