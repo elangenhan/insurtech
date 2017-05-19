@@ -29,6 +29,7 @@
     "express": "^4.15.3",
     "http-post": "^0.1.1",
     "http-proxy": "^1.16.2",
+    "node-sass": "^4.5.3",
     "watson-developer-cloud": "^2.31.1"
   },
   "devDependencies": {

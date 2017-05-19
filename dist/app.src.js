@@ -10,12 +10,12 @@ app.use(express.static(__dirname + '/dist'));
 app.use(cors());
 
 app.use(bodyParser.urlencoded({
-  extended: true
+    extended: true
 }));
 
-app.get("/sayHello", function (request, response) {
-  var user_name = request.query.user_name;
-  response.end("Hello " + user_name + "!");
+app.get("/sayHello", function(request, response) {
+    var user_name = request.query.user_name;
+    response.end("Hello " + user_name + "!");
 });
 
 var conversation = watson.conversation({
@@ -27,14 +27,14 @@ var conversation = watson.conversation({
 });
 
 var visual_recognition_carfruits = watson.visual_recognition({
-  api_key: '7e68869fb2fa809332453fd95f94f5117d8d53ee',
-  version_date: '2016-05-20',
-  version: 'v3'
+    api_key: '7e68869fb2fa809332453fd95f94f5117d8d53ee',
+    version_date: '2016-05-20',
+    version: 'v3'
 });
 var visual_recognition_caraccident = watson.visual_recognition({
-  api_key: '3768bac1246cdd7a709e4cb94604f1b08ea9d24c',
-  version_date: '2016-05-20',
-  version: 'v3'
+    api_key: '3768bac1246cdd7a709e4cb94604f1b08ea9d24c',
+    version_date: '2016-05-20',
+    version: 'v3'
 });
 
 var context = {};
@@ -47,16 +47,23 @@ app.post('/conversation', function(req, res) {
     var message = req.body.message;
 
     conversation.message({
-      workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
-      input: {'text': message},
-      context: req.body.context
-    },  function(err, response) {
-      if (err)
-        console.log('error:', err);
-      else
-        res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(response));
+        workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+        input: {
+            'text': message
+        },
+        context: req.body.context
+    }, function(err, response) {
+        if (err) {
+            console.log('error:', err);
+        } else {
+            res.setHeader('Content-Type', 'application/json');
+            res.send(JSON.stringify(response));
+        }
     });
+});
+
+app.post('/visualRecognition', function(req, res) {
+
 });
 
 app.listen(port);

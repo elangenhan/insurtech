@@ -1,20 +1,17 @@
-function speech(callback){
-    const recognition = new SpeechRecognition();
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
 
+
+function speech(callback){
     recognition.addEventListener('result', e => {
-        const transcript = Array.from(e.results)
+        let transcript = Array.from(e.results)
         .map(result => result[0])
         .map(result => result.transcript)
         .join('');
-
-        console.log(transcript);
 
         if (e.results[0].isFinal) {
             callback(transcript);
         }
     });
-
-    recognition.addEventListener('end', recognition.start);
     recognition.start();
-
 }
