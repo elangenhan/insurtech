@@ -19,13 +19,64 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "6db59d7fa9c169f104cee3a22dc7525591c1a46a"
+        "sha": "a1d2208bf614b9c5863b52303101f2bd9b37e2e8"
       }
     ],
-    "outputSha": "fa71d3500979153418bc573506786fafe2e50ac9",
+    "outputSha": "3825dac235703f52e73faa47dee767188882adde",
     "input": "index.pug",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_styles.scss",
+        "sha": "c85d58962167c8068375b57905305cab97d94eb9"
+      }
+    ],
+    "outputSha": "c85d58962167c8068375b57905305cab97d94eb9",
+    "input": "styles/_styles.scss",
+    "output": [
+      "styles/_styles.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_variables.scss",
+        "sha": "07e1f05581d5532af2ae5bbd0674c9bb2e141995"
+      }
+    ],
+    "outputSha": "07e1f05581d5532af2ae5bbd0674c9bb2e141995",
+    "input": "styles/_variables.scss",
+    "output": [
+      "styles/_variables.scss"
+    ]
+  },
+  {
+    "type": "node-sass@4.5.3::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/main.scss",
+        "sha": "28a64cf28ca0fda5b4f15cc7f0c3d622aea0c1e2"
+      },
+      {
+        "file": "styles/_styles.scss",
+        "sha": "c85d58962167c8068375b57905305cab97d94eb9"
+      },
+      {
+        "file": "styles/_variables.scss",
+        "sha": "07e1f05581d5532af2ae5bbd0674c9bb2e141995"
+      }
+    ],
+    "outputSha": "8927ab5318a3fec1eacc65cba72e6a5815fef37a",
+    "input": "styles/main.scss",
+    "output": [
+      "styles/main.css.map",
+      "styles/main.css"
     ]
   },
   {
@@ -41,35 +92,6 @@
     "output": [
       "scripts/main.js.map",
       "scripts/main.js"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "public/index.html",
-        "sha": "db10316f7e10b8e4352f614be0f3ce996fdd8f67"
-      }
-    ],
-    "outputSha": "3eb095211c08d350f0357254cd96a54624ca3d6a",
-    "input": "public/index.html",
-    "output": [
-      "public/index.html"
-    ]
-  },
-  {
-    "type": "node-sass@4.5.3::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/main.scss",
-        "sha": "25b93492038c4fae02cbeb7cc61b7730ac1cc8aa"
-      }
-    ],
-    "outputSha": "8927ab5318a3fec1eacc65cba72e6a5815fef37a",
-    "input": "styles/main.scss",
-    "output": [
-      "styles/main.css.map",
-      "styles/main.css"
     ]
   }
 ]
