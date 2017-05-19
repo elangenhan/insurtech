@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-	height: 5rem;
+	min-height: 5rem;
 
 	&.header--light {
 		background-color: #ccc;
