@@ -19,13 +19,28 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "aa6c0382c2994baf6f5f727ebd3ad42164c13b47"
+        "sha": "73cca52e0c8bb21ac23ed843627ad4f701400476"
       }
     ],
-    "outputSha": "244d47f41eda9a7de4780c7248ae23d8d6f8e89f",
+    "outputSha": "6fa3216d2726ec5b1de0daf5505b55d3aea8d4a8",
     "input": "index.pug",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b16bad1a86c9f90ab9a90d21acecc68f707cf3b6"
+      }
+    ],
+    "outputSha": "1a9c08249fbba040794af06736bdc7180c4de1bc",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
     ]
   },
   {
@@ -77,10 +92,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "145019d1f7984fb236fe0065557ab6e20375367d"
+        "sha": "bd3530671f2496fd2cf806fb48745abecfb030f3"
       }
     ],
-    "outputSha": "145019d1f7984fb236fe0065557ab6e20375367d",
+    "outputSha": "bd3530671f2496fd2cf806fb48745abecfb030f3",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -126,19 +141,19 @@
         "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
       },
       {
-        "file": "styles/_typo.scss",
-        "sha": "b7cff66d73b433182c513be81c3d11b0ed99efb9"
+        "file": "styles/_styles.scss",
+        "sha": "bd3530671f2496fd2cf806fb48745abecfb030f3"
       },
       {
-        "file": "styles/_styles.scss",
-        "sha": "145019d1f7984fb236fe0065557ab6e20375367d"
+        "file": "styles/_typo.scss",
+        "sha": "b7cff66d73b433182c513be81c3d11b0ed99efb9"
       },
       {
         "file": "styles/_variables.scss",
         "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
       }
     ],
-    "outputSha": "0ecc2d234ddd0e911dac0d60b25b82f839f3e9eb",
+    "outputSha": "40343b0a3bf4051e3ae232fcb5c481e69eca61eb",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
