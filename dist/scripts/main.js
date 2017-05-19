@@ -1,2 +1,2 @@
-"use strict";var helloWorld=function(){return console.log("Hello World")};helloWorld();var mytext=void 0;speech(function(o){mytext=o,console.log(mytext)});
+"use strict";var helloWorld=function(){return console.log("Hello World")};helloWorld(),speech(function(o){console.log(o)});
 //# sourceMappingURL=main.js.map

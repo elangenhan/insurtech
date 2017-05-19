@@ -3,6 +3,7 @@ $resize: 100% - 5%; //Container Width
 $gutter: 0.5; //gutter size
 $columns: 12; //number of columns
 $slug: is !default; // change it to col if you're comfortable
+$breakpoint-xs: 12em; // mobile
 $breakpoint-md:  48em;  // tablets
 $breakpoint-lg: 56.25em; // desktop
 $breakpoint-xlg: 68.75em; // HD
@@ -13,37 +14,41 @@ body {
 }
 
 /* For mobile phones: */
-.container {
-  width: $resize;
-  margin: auto;
-  overflow: hidden;
-}
-.columns {
-  display: block;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -.5rem;
-  margin-left: -.5rem;
-}
-@for $i from 1 through $columns {
-  .#{$slug}-#{$i} {
-    width: $width + (100% - $width);
-    margin: +#{$gutter}em 0em 0em +#{$gutter}em;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+@media only screen and (min-width: $breakpoint-xs) {
+  .container {
+    width: $resize;
+    margin: auto;
+    overflow: hidden;
+  }
+  .columns {
+    display: block;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+  }
+  @for $i from 1 through $columns {
+    .#{$slug}-#{$i} {
+      width: $width + (100% - $width);
+      margin: +#{$gutter}em 0em 0em +#{$gutter}em;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
   }
 }
+
+
 /* For Tablets: */
 @media only screen and (min-width: $breakpoint-md) {
   .container {
