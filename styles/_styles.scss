@@ -1,31 +1,5 @@
-h1 {
-    color: $heading-color;
-}
-
-p, 
-small, 
-i, 
-strong, 
-li, 
-input, 
-textarea,
-span {
-    
-    font-family: 'Open Sans', sans-serif;
-}
-
-li {
-	display: inline;
-	padding-right: 1rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Dosis', sans-serif;
+body {
+	background-color: #00A894;
 }
 
 .container {
@@ -37,7 +11,7 @@ h6 {
 }
 
 .header {
-	height: 6rem;
+	height: 5rem;
 
 	&.header--light {
 		background-color: #ccc;
@@ -45,7 +19,7 @@ h6 {
 	}
 
 	&.header--dark {
-		background-color: #000;
+		background-color: #444;
 		color: #fff;
 	}
 
@@ -53,6 +27,7 @@ h6 {
 		color: green;
 	}
 }
+
 
 .button {
 	display: inline-block;
