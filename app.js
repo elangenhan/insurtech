@@ -44,7 +44,6 @@ context.carDamaged = null;
 context.isValid = null;
 
 app.post('/conversation', function(req, res) {
-	console.log(req);
     var message = req.body.message;
 
     conversation.message({

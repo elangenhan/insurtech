@@ -1,5 +1,14 @@
 body {
-	background-color: #00A894;
+	background-color: $primary;
+	color: $fontcolor-light;
+}
+
+.black {
+	color: black;
+}
+
+.primary-color{
+	color: $primary;
 }
 
 .container {
@@ -19,8 +28,8 @@ body {
 	}
 
 	&.header--dark {
-		background-color: #444;
-		color: #fff;
+		background-color: $secondary;
+		color: $fontcolor-light;
 	}
 
 	&.header--light-success {
@@ -28,19 +37,18 @@ body {
 	}
 }
 
-
 .button {
 	display: inline-block;
 	border-radius: 3px;
 	padding: 7px 12px;
 	border: 1px solid #D5D5D5;
 	background-image: linear-gradient(#EEE, #DDD);
-	.button--state-success {
+	&.button--state-success {
 		color: #FFF;
 		background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
 		border-color: #4A993E;
 	}
-	.button--state-danger {
+	&.button--state-danger {
 		color: #900;
 	}
 }
