@@ -66,11 +66,15 @@ function sendText(text){
 }
 
 function uploadPic() {
-    var data = null;
+    var pic;
+
     $.ajax({
         type: "POST",
         url: "/visualRecognition",
-        data: data,
+        data: {
+            context: JSON.stringify(context),
+            pic: pic
+        },
         success: function(res){
             var resp = res.output.text[0];
             context = res.context;
