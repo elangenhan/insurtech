@@ -19,6 +19,8 @@ function speech(callback){
 
         if (e.results[0].isFinal) {
             callback(transcript);
+            recognition.stop();
+
         }
     });
     recognition.start();
@@ -44,7 +46,7 @@ function sendText(text, context){
             console.log(resp);
 
             var msg = new SpeechSynthesisUtterance(resp);
-            window.speechSynthesis.speak(resp);
+            window.speechSynthesis.speak(msg);
         },
         error: function(err){
             console.log(err);
