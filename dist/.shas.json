@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "app.js",
-        "sha": "9c0fbeb4a236d2aefdafc515e77f54bb84e37dde"
+        "sha": "494b126965b4ce4539a3d14a87a880ccbd20772b"
       }
     ],
-    "outputSha": "3338dea5dc8510d27bf512b9428037ff02120394",
+    "outputSha": "260b41e23b7ea4a65424b51bc15e16c0ebd2ea6a",
     "input": "app.js",
     "output": [
       "app.js.map",
@@ -106,10 +106,10 @@
     "inputSha": [
       {
         "file": "styles/_reset.scss",
-        "sha": "84bccf27f26dd7683d651a5626481a31629b330a"
+        "sha": "7148b42515fd0b0884048ec2a5c61204f110ef6b"
       }
     ],
-    "outputSha": "84bccf27f26dd7683d651a5626481a31629b330a",
+    "outputSha": "7148b42515fd0b0884048ec2a5c61204f110ef6b",
     "input": "styles/_reset.scss",
     "output": [
       "styles/_reset.scss"
@@ -120,10 +120,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1"
+        "sha": "0d40ab35364b6b5506bd9d1ee28e808a241b314a"
       }
     ],
-    "outputSha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1",
+    "outputSha": "0d40ab35364b6b5506bd9d1ee28e808a241b314a",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -165,16 +165,12 @@
         "sha": "7820cc1b4b38728709c6c321543fa508b1080f33"
       },
       {
-        "file": "styles/_animations.scss",
-        "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
+        "file": "styles/_grid.scss",
+        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
       },
       {
         "file": "styles/_reset.scss",
-        "sha": "84bccf27f26dd7683d651a5626481a31629b330a"
-      },
-      {
-        "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+        "sha": "7148b42515fd0b0884048ec2a5c61204f110ef6b"
       },
       {
         "file": "styles/_typo.scss",
@@ -182,14 +178,18 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1"
+        "sha": "0d40ab35364b6b5506bd9d1ee28e808a241b314a"
       },
       {
         "file": "styles/_variables.scss",
         "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+      },
+      {
+        "file": "styles/_animations.scss",
+        "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "fd36bb9cc4dbc827913eb01d6edd2e9e76d8dcf1",
+    "outputSha": "7227f7fd521a2aec0433dd01e0ccc362ed0779db",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
