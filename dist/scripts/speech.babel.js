@@ -10,8 +10,12 @@ function openSpeechRecognition() {
 function displayMessage(reply, input) {
     if(reply) {
         $('.messageBox').append('<div class="is-12 start left"><h2>' + reply + '</h2></div>');
+        $('.messageBox').animate({
+        scrollTop: $('.messageBox')[0].scrollHeight}, 2000);
     } else {
         $('.messageBox').append('<div class="is-12 end right"><h2>' + input + '</h2></div>');
+        $('.messageBox').animate({
+        scrollTop: $('.messageBox')[0].scrollHeight}, 2000);
     }
 }
 

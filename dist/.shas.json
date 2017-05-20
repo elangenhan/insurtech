@@ -78,10 +78,10 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "320dabf243d29d04662d102d3533491a38951c38"
+        "sha": "48bd88a006486d923f732664f64ba02c92e26050"
       }
     ],
-    "outputSha": "aade2ae5054a69acacf8039529b7f10cdb02878e",
+    "outputSha": "691bc99fb31a63ebded7f59cc70f749ffa0cad5a",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
@@ -135,10 +135,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "4ecfdaabdcea20084433aa8d71a8b2150bae417f"
+        "sha": "45a3b39b7f0994a21d72093159a30c12f4927d3b"
       }
     ],
-    "outputSha": "4ecfdaabdcea20084433aa8d71a8b2150bae417f",
+    "outputSha": "45a3b39b7f0994a21d72093159a30c12f4927d3b",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -193,7 +193,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "4ecfdaabdcea20084433aa8d71a8b2150bae417f"
+        "sha": "45a3b39b7f0994a21d72093159a30c12f4927d3b"
       },
       {
         "file": "styles/_variables.scss",
@@ -204,7 +204,7 @@
         "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "6a1c32e7156bc1a37fe384b9976cea2ce61cf488",
+    "outputSha": "5d9d378bdd43c21a3b5d52fd44501d000ef018aa",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
