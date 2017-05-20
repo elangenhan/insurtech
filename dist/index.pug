@@ -13,24 +13,27 @@ html
         .container.asktom
             .columns.header.header--dark
                 .is-4.start
-                    h3 #asktom
+                    h3#asktom #asktom
                 .is-8.end
                     //ul
                         li One
                         li Two
             .columns.wrapper
                 .is-12.center
-                    button.wrapper--centered.jumboButton(onclick='handleClick()')
+                    button.wrapper--centered.jumboButton(onclick='handleClickStart()')
                         h3 Wie kann ich dir helfen?
                         span.fa-stack.fa-5x
                             i.fa.fa-circle.fa-stack-2x.fa-inverse
                             i.fa.fa-microphone.fa-stack-1x.primary-color
-                    button.wrapper-centered.rightButton(onclick='handleClick()')
+            .columns.footer
+                .is-11.end
+                    .output-box
+                        h1#mytext  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                .is-1.end
+                    button.rightButton(onclick='handleClick()')
                         span.fa-stack.fa-5x
                             i.fa.fa-circle.fa-stack-2x.fa-inverse
                             i.fa.fa-microphone.fa-stack-1x.primary-color
-            .columns.footer
-                    h1#mytext  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 
 
@@ -39,3 +42,4 @@ html
         script(src='scripts/main.js')
         script(src='scripts/animate.js')
         script(src='scripts/speech.js')
+        script(src='scripts/ask.js')

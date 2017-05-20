@@ -1,7 +1,7 @@
-let first = 0;
-
+let first = null;
 $(document).ready(() => {
 	init();
+	first = 0;
 });
 
 function init() {
@@ -9,16 +9,22 @@ function init() {
 	$(".footer").hide();
 }
 
+function handleClickStart() {
+    speechClick();
+    fadeInFooter();
+    console.log("muh");
+}
+
 function handleClick() {
     speechClick();
-    if(first == 0) {
-    	$(".jumboButton").fadeOut(1000);
-	    $(".rightButton").fadeIn(1000);
-	    $(".rightButton > .fa-stack").addClass('pulse');
-	    $(".footer").addClass('active');
-	    $(".footer").fadeIn(1000);
-	    console.log('Only one');
-	    first = 1;
-    }
     console.log("muh");
+}
+
+function fadeInFooter() {
+	$(".jumboButton").fadeOut(1000);
+	$(".footer").addClass('active');
+	$(".footer").fadeIn(1000);
+    $(".rightButton").fadeIn(1000);
+    $(".rightButton > .fa-stack").addClass('pulse');
+    console.log('Only one');
 }

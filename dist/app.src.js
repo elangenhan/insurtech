@@ -10,8 +10,9 @@ app.use(express.static(__dirname + '/dist'));
 app.use(cors());
 
 app.use(bodyParser.urlencoded({
-    extended: true
+    extended: false
 }));
+app.use(bodyParser.json());
 
 app.get("/sayHello", function(request, response) {
     var user_name = request.query.user_name;
@@ -38,15 +39,21 @@ var visual_recognition_caraccident = watson.visual_recognition({
 });
 
 app.post('/conversation', function(req, res) {
-    var message = req.body.message;
-    var context = req.body.context;
+    var body = req.body;
+    var message = body.message;
+    var context = "";
+    body.context != null ? context = JSON.parse(body.context) : context = {}
+
+    console.log(body);
+
+    console.log(context);
 
     conversation.message({
         workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
         input: {
             'text': message
         },
-        context: req.body.context
+        context: context
     }, function(err, response) {
         if (err) {
             console.log('error:', err);
