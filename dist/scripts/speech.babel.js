@@ -19,7 +19,7 @@ function speech(callback){
 
         if (e.results[0].isFinal) {
             callback(transcript);
-            recognition.stop();
+            // recognition.stop();
 
         }
     });
@@ -29,6 +29,7 @@ function speech(callback){
 function speechClick(){
     speech(function(text){
         sendText(text);
+        $('#mytext').text();
         console.log(text);
     });
 }
