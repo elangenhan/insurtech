@@ -1,6 +1,9 @@
 function openSpeechRecognition() {
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.language = 'de';
     return recognition;
 }
 
@@ -42,4 +45,4 @@ function sendText(text){
             console.log(err);
         }
     });
-}
+}s
