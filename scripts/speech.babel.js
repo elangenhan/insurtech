@@ -53,6 +53,37 @@ function sendText(text){
 
             var msg = new SpeechSynthesisUtterance(resp);
             window.speechSynthesis.speak(msg);
+
+            if (context.uploadPic) {
+                context.uploadPic = false;
+                uploadPic();
+            }
+        },
+        error: function(err){
+            console.log(err);
+        }
+    });
+}
+
+function uploadPic() {
+    var data = null;
+    $.ajax({
+        type: "POST",
+        url: "/visualRecognition",
+        data: data,
+        success: function(res){
+            var resp = res.output.text[0];
+            context = res.context;
+            console.log(context);
+            console.log(resp);
+
+            var msg = new SpeechSynthesisUtterance(resp);
+            window.speechSynthesis.speak(msg);
+
+            if (context.uploadPic) {
+                context.uploadPic = false;
+                uploadPic();
+            }
         },
         error: function(err){
             console.log(err);
