@@ -63,7 +63,56 @@ app.post('/conversation', function(req, res) {
 });
 
 app.post('/visualRecognition', function(req, res) {
-	
+    context.actionUploadCar = null;
+    context.actionUploadAccident = null;
+    
+    var image = payload.message.attachments[0].payload.url;
+    var paramsCarFruits = {
+        url: payload.message.attachments[0].payload.url,
+        classifier_ids: ['fruits_1741951189']
+    };
+    // should be empty = car
+    var paramsCarAccident = {
+        url: payload.message.attachments[0].payload.url,
+        classifier_ids: ['accident_164647303']
+    };
+
+    visual_recognition_carfruits.classify(paramsCarFruits, function(err, res) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(JSON.stringify(res, null, 2));
+
+            if (res.images[0].classifiers.length > 0) {
+
+                context.isCar = false;
+                context.isAccident = false;
+                saveContext(recipient, context);
+                sendToWatson('', reply, actions, recipient);
+                //its a car
+            } else {
+                visual_recognition_caraccident.classify(paramsCarAccident, function(err, res) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log(JSON.stringify(res, null, 2));
+
+                        if (res.images[0].classifiers.length > 0) {
+                            context.isCar = false;
+                            context.isAccident = true;
+                            saveContext(recipient, context);
+                            sendToWatson('', reply, actions, recipient);
+                        } else {
+                            context.isCar = true;
+                            context.isAccident = false;
+                            saveContext(recipient, context);
+                            sendToWatson('', reply, actions, recipient);
+                        }
+                    }
+                });
+            }
+        }
+    });
 });
 
 app.listen(port);

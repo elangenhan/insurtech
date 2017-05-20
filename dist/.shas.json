@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "app.js",
-        "sha": "1bda0942b4d84870dbf66994b66a3b5c01db3a34"
+        "sha": "25ef0733046430f0fc83c56f643b69928b09a9c2"
       }
     ],
-    "outputSha": "fa10aee49cde9c80c6f831aff1284cf40d133466",
+    "outputSha": "efb1d66a143d8040bf26b617a60736b9e98292e3",
     "input": "app.js",
     "output": [
       "app.js.map",
@@ -63,14 +63,28 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "1064377a5a49966789cb5d979ef6239793b84237"
+        "sha": "bb7cc8d2b0cd14baa00683fda44cd34f19912fde"
       }
     ],
-    "outputSha": "3b27a3b67ecb8adbb7e668cf8759b5f2738304e5",
+    "outputSha": "9ec85c94be740c81f92b01f9f78feafda4139fe4",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
       "scripts/speech.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_grid.scss",
+        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+      }
+    ],
+    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
+    "input": "styles/_grid.scss",
+    "output": [
+      "styles/_grid.scss"
     ]
   },
   {
@@ -99,20 +113,6 @@
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
-      }
-    ],
-    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
-    "input": "styles/_grid.scss",
-    "output": [
-      "styles/_grid.scss"
     ]
   },
   {
