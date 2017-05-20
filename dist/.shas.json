@@ -1,13 +1,28 @@
 [
   {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "app.js",
+        "sha": "9c0fbeb4a236d2aefdafc515e77f54bb84e37dde"
+      }
+    ],
+    "outputSha": "3338dea5dc8510d27bf512b9428037ff02120394",
+    "input": "app.js",
+    "output": [
+      "app.js.map",
+      "app.js"
+    ]
+  },
+  {
     "type": "pug@2.0.0-rc.1::map::minify",
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "769c02d5a8e46ae08c45cfe7c629a54cd82d5dbd"
+        "sha": "c58c444cb10e7678d63ee3279289496fef49d170"
       }
     ],
-    "outputSha": "a96dcc95368e2fe05e4082263467af9fe68b8a1f",
+    "outputSha": "c4bcf5e84a8c3d060567cc662422bc4492e92c1d",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -18,10 +33,10 @@
     "inputSha": [
       {
         "file": "scripts/animate.babel.js",
-        "sha": "73fb657397069c405fb01c55e108228f834c94ba"
+        "sha": "c6a3559e999f9d128d705c72bf7b326c8a9453b7"
       }
     ],
-    "outputSha": "284e0fc32c3bf0f5f1be4e76efd2407a4bf9515c",
+    "outputSha": "32f5eca06a71fddab831a34cf4fa7dd9c230a316",
     "input": "scripts/animate.babel.js",
     "output": [
       "scripts/animate.js.map",
@@ -63,10 +78,10 @@
     "inputSha": [
       {
         "file": "styles/_animations.scss",
-        "sha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1"
+        "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1",
+    "outputSha": "0997398a53b4f3dfac97821e363ba533bae96a30",
     "input": "styles/_animations.scss",
     "output": [
       "styles/_animations.scss"
@@ -90,28 +105,28 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_styles.scss",
-        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
+        "file": "styles/_reset.scss",
+        "sha": "84bccf27f26dd7683d651a5626481a31629b330a"
       }
     ],
-    "outputSha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f",
-    "input": "styles/_styles.scss",
+    "outputSha": "84bccf27f26dd7683d651a5626481a31629b330a",
+    "input": "styles/_reset.scss",
     "output": [
-      "styles/_styles.scss"
+      "styles/_reset.scss"
     ]
   },
   {
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+        "file": "styles/_styles.scss",
+        "sha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99"
       }
     ],
-    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
-    "input": "styles/_variables.scss",
+    "outputSha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99",
+    "input": "styles/_styles.scss",
     "output": [
-      "styles/_variables.scss"
+      "styles/_styles.scss"
     ]
   },
   {
@@ -129,11 +144,33 @@
     ]
   },
   {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_variables.scss",
+        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+      }
+    ],
+    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
+    "input": "styles/_variables.scss",
+    "output": [
+      "styles/_variables.scss"
+    ]
+  },
+  {
     "type": "node-sass@4.5.3::map::minify",
     "inputSha": [
       {
         "file": "styles/main.scss",
-        "sha": "c706128f324b0a212c6ebd672d483cc7541c9e1d"
+        "sha": "7820cc1b4b38728709c6c321543fa508b1080f33"
+      },
+      {
+        "file": "styles/_animations.scss",
+        "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
+      },
+      {
+        "file": "styles/_reset.scss",
+        "sha": "84bccf27f26dd7683d651a5626481a31629b330a"
       },
       {
         "file": "styles/_grid.scss",
@@ -141,7 +178,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
+        "sha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99"
       },
       {
         "file": "styles/_typo.scss",
@@ -150,13 +187,9 @@
       {
         "file": "styles/_variables.scss",
         "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
-      },
-      {
-        "file": "styles/_animations.scss",
-        "sha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1"
       }
     ],
-    "outputSha": "0c104bb932462ab95e4c34936f647de545d8d323",
+    "outputSha": "9360c527ce2c3eef90ef78b0ba3b2e7a3b989a45",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",

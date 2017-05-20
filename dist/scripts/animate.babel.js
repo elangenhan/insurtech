@@ -1,3 +1,5 @@
+let first = 0;
+
 $(document).ready(() => {
 	init();
 });
@@ -9,10 +11,14 @@ function init() {
 
 function handleClick() {
     speechClick();
-    $(".jumboButton").fadeOut(1000);
-    $(".rightButton").fadeIn(1000);
-    $(".rightButton > .fa-stack").addClass('pulse');
-    $(".footer").addClass('active');
-    $(".footer").fadeIn(1000);
+    if(first == 0) {
+    	$(".jumboButton").fadeOut(1000);
+	    $(".rightButton").fadeIn(1000);
+	    $(".rightButton > .fa-stack").addClass('pulse');
+	    $(".footer").addClass('active');
+	    $(".footer").fadeIn(1000);
+	    console.log('Only one');
+	    first = 1;
+    }
     console.log("muh");
 }

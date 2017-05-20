@@ -1,0 +1,18 @@
+button {
+	background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    appearance: button; /* for input */
+    user-select: none; /* for button */
+    &:focus {
+    	outline:0;
+    }
+    &*{
+    	cursor: pointer;
+    }
+}

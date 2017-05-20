@@ -67,6 +67,8 @@ body {
 			bottom: 5rem !important;
 		    right: 2rem !important;
 		    position: absolute;
+		    min-width: 4em;
+    		min-height: 4em;
 			.fa-stack {
 				transition: font-size 1.5s;
 				font-size: 2em;
