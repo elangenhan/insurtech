@@ -87,9 +87,20 @@ app.post('/visualRecognition', function(req, res) {
 
                 context.isCar = false;
                 context.isAccident = false;
-                saveContext(recipient, context);
-                sendToWatson('', reply, actions, recipient);
-                //its a car
+                conversation.message({
+                    workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+                    input: {
+                        'text': message
+                    },
+                    context: context
+                }, function(err, response) {
+                    if (err) {
+                        console.log('error:', err);
+                    } else {
+                        res.setHeader('Content-Type', 'application/json');
+                        res.send(JSON.stringify(response));
+                    }
+                });
             } else {
                 visual_recognition_caraccident.classify(paramsCarAccident, function(err, res) {
                     if (err) {
@@ -100,13 +111,37 @@ app.post('/visualRecognition', function(req, res) {
                         if (res.images[0].classifiers.length > 0) {
                             context.isCar = false;
                             context.isAccident = true;
-                            saveContext(recipient, context);
-                            sendToWatson('', reply, actions, recipient);
+                            conversation.message({
+                                workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+                                input: {
+                                    'text': message
+                                },
+                                context: context
+                            }, function(err, response) {
+                                if (err) {
+                                    console.log('error:', err);
+                                } else {
+                                    res.setHeader('Content-Type', 'application/json');
+                                    res.send(JSON.stringify(response));
+                                }
+                            });
                         } else {
                             context.isCar = true;
                             context.isAccident = false;
-                            saveContext(recipient, context);
-                            sendToWatson('', reply, actions, recipient);
+                            conversation.message({
+                                workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+                                input: {
+                                    'text': message
+                                },
+                                context: context
+                            }, function(err, response) {
+                                if (err) {
+                                    console.log('error:', err);
+                                } else {
+                                    res.setHeader('Content-Type', 'application/json');
+                                    res.send(JSON.stringify(response));
+                                }
+                            });
                         }
                     }
                 });

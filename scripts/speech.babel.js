@@ -7,6 +7,14 @@ function openSpeechRecognition() {
     return recognition;
 }
 
+function displayMessage(reply, input) {
+    if(reply) {
+        $('.messageBox').append('<div class="is-12 start left"><h2>' + reply + '</h2></div>');
+    } else {
+        $('.messageBox').append('<div class="is-12 end right"><h2>' + input + '</h2></div>');
+    }
+}
+
 function speech(callback){
     let recognition = openSpeechRecognition();
     recognition.addEventListener('result', e => {
@@ -16,6 +24,7 @@ function speech(callback){
         .join('');
 
         $('#mytext').text(transcript);
+        displayMessage(false, transcript);
 
         if (e.results[0].isFinal) {
             callback(transcript);
@@ -50,6 +59,7 @@ function sendText(text){
             context = res.context;
             console.log(context);
             console.log(resp);
+            displayMessage(resp, false);
 
             var msg = new SpeechSynthesisUtterance(resp);
             window.speechSynthesis.speak(msg);

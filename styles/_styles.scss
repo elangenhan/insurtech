@@ -97,7 +97,9 @@ body {
 
 .messageBox {
 	display: none;
+	width: 100%;
 	transition: display 2s;
+	padding-top: 2em;
 	.left {
 		border-left: 4px solid #fff;
 	}

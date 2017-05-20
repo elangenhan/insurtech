@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "app.js",
-        "sha": "494b126965b4ce4539a3d14a87a880ccbd20772b"
+        "sha": "a4d186158ff872657af711993343d0b3a22ffa7d"
       }
     ],
-    "outputSha": "260b41e23b7ea4a65424b51bc15e16c0ebd2ea6a",
+    "outputSha": "23bb24e587f30c162f38397af259e01afac9a8b2",
     "input": "app.js",
     "output": [
       "app.js.map",
@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "6c455a58e28afd5a64c9d4e631bb2e8f621c1833"
+        "sha": "ede4421fee983a394496ae8d4f92eebbc09ffcae"
       }
     ],
-    "outputSha": "150dddd98e598eeddda5a772c856e7b6479c38c8",
+    "outputSha": "43901483aae9b6543b18a026d43bcb69d489b7ce",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -33,10 +33,10 @@
     "inputSha": [
       {
         "file": "scripts/animate.babel.js",
-        "sha": "25c6ed21fa368a487b08d99e5448dcb448cbb3a6"
+        "sha": "66bf474c9cee7d96f65a8e80a1fb9e9da9349121"
       }
     ],
-    "outputSha": "2eea891adb2239be3fd411030ec322ec5813916e",
+    "outputSha": "c4d2b2ef77e854e90d3946a47dc272c76a4a824e",
     "input": "scripts/animate.babel.js",
     "output": [
       "scripts/animate.js.map",
@@ -78,10 +78,10 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "aefbdd09a48953c1a89fd39d1b908684a1dc1628"
+        "sha": "2d66f8e060cf43e59cfff3a8217ef6c278ffe91f"
       }
     ],
-    "outputSha": "782dd887fd140c0a7e24286bddff6fe173d47cc8",
+    "outputSha": "08f7987e7b899856d121abd6c6088eba62361ed8",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
@@ -107,10 +107,10 @@
     "inputSha": [
       {
         "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+        "sha": "7b9778c7aaee68292c3cd35446b34dbee8a59afb"
       }
     ],
-    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
+    "outputSha": "7b9778c7aaee68292c3cd35446b34dbee8a59afb",
     "input": "styles/_grid.scss",
     "output": [
       "styles/_grid.scss"
@@ -135,10 +135,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "8a4e293c03d6a9ca9140028afe393dd157df5453"
+        "sha": "56d9a02aa09457c617454524a54bbe2da6d72940"
       }
     ],
-    "outputSha": "8a4e293c03d6a9ca9140028afe393dd157df5453",
+    "outputSha": "56d9a02aa09457c617454524a54bbe2da6d72940",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -163,10 +163,10 @@
     "inputSha": [
       {
         "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+        "sha": "44612f5ea9fa25e4adb077bef5a024643b353493"
       }
     ],
-    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
+    "outputSha": "44612f5ea9fa25e4adb077bef5a024643b353493",
     "input": "styles/_variables.scss",
     "output": [
       "styles/_variables.scss"
@@ -181,7 +181,7 @@
       },
       {
         "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+        "sha": "7b9778c7aaee68292c3cd35446b34dbee8a59afb"
       },
       {
         "file": "styles/_reset.scss",
@@ -193,18 +193,18 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "8a4e293c03d6a9ca9140028afe393dd157df5453"
+        "sha": "56d9a02aa09457c617454524a54bbe2da6d72940"
       },
       {
         "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+        "sha": "44612f5ea9fa25e4adb077bef5a024643b353493"
       },
       {
         "file": "styles/_animations.scss",
         "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "1b174aa0edc8a45b7fe21b8662196f9416fd862c",
+    "outputSha": "ddf8af7ca9afe7fe33fb836c7d0b9ad0cc22235b",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
