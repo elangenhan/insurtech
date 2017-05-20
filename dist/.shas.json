@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "c58c444cb10e7678d63ee3279289496fef49d170"
+        "sha": "2fdb5bde0189f6453cd04bd43207fc5546ce4faf"
       }
     ],
-    "outputSha": "c4bcf5e84a8c3d060567cc662422bc4492e92c1d",
+    "outputSha": "28bbc7046269a255366641adf5d04bbb589c3685",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -33,10 +33,10 @@
     "inputSha": [
       {
         "file": "scripts/animate.babel.js",
-        "sha": "c6a3559e999f9d128d705c72bf7b326c8a9453b7"
+        "sha": "a548d135437e4c883cf4b75e3159727c952ba416"
       }
     ],
-    "outputSha": "32f5eca06a71fddab831a34cf4fa7dd9c230a316",
+    "outputSha": "e6604e2e27484371396561361e85a4bacdfcf2fb",
     "input": "scripts/animate.babel.js",
     "output": [
       "scripts/animate.js.map",
@@ -120,10 +120,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99"
+        "sha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1"
       }
     ],
-    "outputSha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99",
+    "outputSha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -134,10 +134,10 @@
     "inputSha": [
       {
         "file": "styles/_typo.scss",
-        "sha": "b7cff66d73b433182c513be81c3d11b0ed99efb9"
+        "sha": "bbe6874fc450878a64622c06eb0101cce2e7b89a"
       }
     ],
-    "outputSha": "b7cff66d73b433182c513be81c3d11b0ed99efb9",
+    "outputSha": "bbe6874fc450878a64622c06eb0101cce2e7b89a",
     "input": "styles/_typo.scss",
     "output": [
       "styles/_typo.scss"
@@ -177,19 +177,19 @@
         "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
       },
       {
-        "file": "styles/_styles.scss",
-        "sha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99"
+        "file": "styles/_typo.scss",
+        "sha": "bbe6874fc450878a64622c06eb0101cce2e7b89a"
       },
       {
-        "file": "styles/_typo.scss",
-        "sha": "b7cff66d73b433182c513be81c3d11b0ed99efb9"
+        "file": "styles/_styles.scss",
+        "sha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1"
       },
       {
         "file": "styles/_variables.scss",
         "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
       }
     ],
-    "outputSha": "9360c527ce2c3eef90ef78b0ba3b2e7a3b989a45",
+    "outputSha": "fd36bb9cc4dbc827913eb01d6edd2e9e76d8dcf1",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
