@@ -97,6 +97,7 @@ function sendUrl(url){
             context = res.context;
             console.log(context);
             console.log(resp);
+            displayMessage(resp, false);
 
             var msg = new SpeechSynthesisUtterance(resp);
             window.speechSynthesis.speak(msg);
