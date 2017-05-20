@@ -63,29 +63,14 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "ffcb81bae9b1e92a89783c324014a8aef3cf6d26"
+        "sha": "1064377a5a49966789cb5d979ef6239793b84237"
       }
     ],
-    "outputSha": "43156622b4b28aaefbc9dee4ac8c48279124f5d6",
+    "outputSha": "3b27a3b67ecb8adbb7e668cf8759b5f2738304e5",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
       "scripts/speech.js"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/speechRecognition.js",
-        "sha": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
-      }
-    ],
-    "outputSha": "b3e123f197faa420e9c1e5dd086a119a7d8f6af1",
-    "input": "scripts/speechRecognition.js",
-    "output": [
-      "scripts/speechRecognition.js.map",
-      "scripts/speechRecognition.js"
     ]
   },
   {
@@ -106,20 +91,6 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
-      }
-    ],
-    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
-    "input": "styles/_grid.scss",
-    "output": [
-      "styles/_grid.scss"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
         "file": "styles/_styles.scss",
         "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
       }
@@ -128,6 +99,20 @@
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_grid.scss",
+        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+      }
+    ],
+    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
+    "input": "styles/_grid.scss",
+    "output": [
+      "styles/_grid.scss"
     ]
   },
   {

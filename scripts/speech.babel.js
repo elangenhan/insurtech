@@ -8,17 +8,20 @@ function openSpeechRecognition() {
 }
 
 function speech(callback){
-    openSpeechRecognition().addEventListener('result', e => {
+    let recognition = openSpeechRecognition();
+    recognition.addEventListener('result', e => {
         let transcript = Array.from(e.results)
         .map(result => result[0])
         .map(result => result.transcript)
         .join('');
 
+        $('#mytext').text(transcript);
+
         if (e.results[0].isFinal) {
             callback(transcript);
         }
     });
-    openSpeechRecognition().start();
+    recognition.start();
 }
 
 function speechClick(){
@@ -45,4 +48,4 @@ function sendText(text){
             console.log(err);
         }
     });
-}s
+}
