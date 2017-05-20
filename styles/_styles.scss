@@ -43,7 +43,10 @@ body {
 	width: 100%;
 	h1 {
 		border-bottom: 1px solid #efefef;
-		padding: .5em;
+		margin-left: 1em;
+		margin-right: 3em;
+		padding: 0 .5em 0 .5em;
+		width: 100%;
 	}
 	&.active {
 		bottom: 3.5rem;
@@ -62,7 +65,7 @@ body {
 		}
 		.rightButton {
 			bottom: 5rem !important;
-		    right: 1rem !important;
+		    right: 2rem !important;
 		    position: absolute;
 			.fa-stack {
 				transition: font-size 1.5s;
