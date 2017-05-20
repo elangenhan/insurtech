@@ -1,8 +1,9 @@
-var input = $(":input");
-input.addEventListener("change", handleFiles, false);
+// $(function(){
+//     var input = $("#watsonFile");
+// });
 
-function handleFiles() {
-  var fileList = this.files;
 
-  console.log(fileList);
-}
+// function chooseFile(){
+//     var pic = input.click();
+//     return pic;
+// }

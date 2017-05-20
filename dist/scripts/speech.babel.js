@@ -54,9 +54,9 @@ function sendText(text){
             var msg = new SpeechSynthesisUtterance(resp);
             window.speechSynthesis.speak(msg);
 
-            if (context.uploadPic) {
-                context.uploadPic = false;
-                uploadPic();
+            if (context.uploadPic == "true") {
+                context.uploadPic = "false";
+                fileTrigger();
             }
         },
         error: function(err){
@@ -65,9 +65,22 @@ function sendText(text){
     });
 }
 
-function uploadPic() {
-    var pic;
 
+function fileTrigger(){
+    console.log("triggered");
+    $("#watsonFile").click();
+}
+
+function uploadPic() {
+
+    $("#watsonFile").click();
+    $("#watsonFile").change(function(data){
+        console.log($("#watsonFile"));
+    });
+}
+
+
+function sendFile(pic){
     $.ajax({
         type: "POST",
         url: "/visualRecognition",
@@ -94,3 +107,10 @@ function uploadPic() {
         }
     });
 }
+
+$(document).keypress(function(e) {
+    console.log(e.which);
+  if(e.which == 102) {
+    uploadPic();
+  }
+});

@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "7bf540057118fb03f136aa1c049484e9c2b234da"
+        "sha": "6c455a58e28afd5a64c9d4e631bb2e8f621c1833"
       }
     ],
-    "outputSha": "c7abf0a50addcf6123a541cfb73efcc40ea3f127",
+    "outputSha": "150dddd98e598eeddda5a772c856e7b6479c38c8",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -48,10 +48,10 @@
     "inputSha": [
       {
         "file": "scripts/fileChooser.js",
-        "sha": "f2c063a5d2fe277e10d64ccf3139af395fc4ffb0"
+        "sha": "c3862479d66e1bc591dedcd13aa641aad9a77ea3"
       }
     ],
-    "outputSha": "5cf3d9d12602bc18a16f6cb50030021b3105817e",
+    "outputSha": "0396a5d232dab17f28e8c752847f98fea6232971",
     "input": "scripts/fileChooser.js",
     "output": [
       "scripts/fileChooser.js.map",
@@ -78,10 +78,10 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "c89b24850625d317d5fbf114e6fa057748524875"
+        "sha": "aefbdd09a48953c1a89fd39d1b908684a1dc1628"
       }
     ],
-    "outputSha": "a8b59e85c3b3f5d7acdb6c2e2cfd056eb81cc73b",
+    "outputSha": "782dd887fd140c0a7e24286bddff6fe173d47cc8",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
@@ -135,10 +135,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "9076b386dcf50634ac055a4552a434b268a4ab6f"
+        "sha": "8a4e293c03d6a9ca9140028afe393dd157df5453"
       }
     ],
-    "outputSha": "9076b386dcf50634ac055a4552a434b268a4ab6f",
+    "outputSha": "8a4e293c03d6a9ca9140028afe393dd157df5453",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -193,7 +193,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "9076b386dcf50634ac055a4552a434b268a4ab6f"
+        "sha": "8a4e293c03d6a9ca9140028afe393dd157df5453"
       },
       {
         "file": "styles/_variables.scss",
@@ -204,7 +204,7 @@
         "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "90cff2a732bd628bb57d9d688f0db018de1851d7",
+    "outputSha": "1b174aa0edc8a45b7fe21b8662196f9416fd862c",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
