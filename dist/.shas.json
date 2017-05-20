@@ -19,13 +19,87 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "6b74d6f1ca7cb8ff0a29e7923f3711446ad20a3a"
+        "sha": "9f7ebddefaf120329421a67b446d0a3bd70ea4ab"
       }
     ],
-    "outputSha": "53acefc0e679afd082a354c376e0a630b7636224",
+    "outputSha": "d5b5f2645ca9f13d19e740851eac895f5ec566e6",
     "input": "index.pug",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/animate.babel.js",
+        "sha": "73fb657397069c405fb01c55e108228f834c94ba"
+      }
+    ],
+    "outputSha": "284e0fc32c3bf0f5f1be4e76efd2407a4bf9515c",
+    "input": "scripts/animate.babel.js",
+    "output": [
+      "scripts/animate.js.map",
+      "scripts/animate.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+      }
+    ],
+    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/speech.babel.js",
+        "sha": "ffcb81bae9b1e92a89783c324014a8aef3cf6d26"
+      }
+    ],
+    "outputSha": "43156622b4b28aaefbc9dee4ac8c48279124f5d6",
+    "input": "scripts/speech.babel.js",
+    "output": [
+      "scripts/speech.js.map",
+      "scripts/speech.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/speechRecognition.js",
+        "sha": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+      }
+    ],
+    "outputSha": "b3e123f197faa420e9c1e5dd086a119a7d8f6af1",
+    "input": "scripts/speechRecognition.js",
+    "output": [
+      "scripts/speechRecognition.js.map",
+      "scripts/speechRecognition.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_animations.scss",
+        "sha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1"
+      }
+    ],
+    "outputSha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1",
+    "input": "styles/_animations.scss",
+    "output": [
+      "styles/_animations.scss"
     ]
   },
   {
@@ -47,10 +121,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "c45aa5dded963f79d9fdc06d15241af84784dd06"
+        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
       }
     ],
-    "outputSha": "c45aa5dded963f79d9fdc06d15241af84784dd06",
+    "outputSha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -89,7 +163,7 @@
     "inputSha": [
       {
         "file": "styles/main.scss",
-        "sha": "4ca99b0abf180cfeb8864980b45f95a2d2010af7"
+        "sha": "c706128f324b0a212c6ebd672d483cc7541c9e1d"
       },
       {
         "file": "styles/_grid.scss",
@@ -97,7 +171,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "c45aa5dded963f79d9fdc06d15241af84784dd06"
+        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
       },
       {
         "file": "styles/_typo.scss",
@@ -106,28 +180,17 @@
       {
         "file": "styles/_variables.scss",
         "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+      },
+      {
+        "file": "styles/_animations.scss",
+        "sha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1"
       }
     ],
-    "outputSha": "40343b0a3bf4051e3ae232fcb5c481e69eca61eb",
+    "outputSha": "0c104bb932462ab95e4c34936f647de545d8d323",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
       "styles/main.css"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "21124cdcff2aeb8661a6ae17b52ebe0daabfea7e"
-      }
-    ],
-    "outputSha": "971c29d2398d3371164c2bdbfa798249ad0c51b3",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
     ]
   }
 ]
