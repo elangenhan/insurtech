@@ -1,8 +1,8 @@
 function openSpeechRecognition() {
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
-    recognition.continuous = true;
-    recognition.interimResults = true;
+    // recognition.continuous = true;
+    // recognition.interimResults = true;
     recognition.language = 'de';
     return recognition;
 }
@@ -19,7 +19,7 @@ function speech(callback){
 
         if (e.results[0].isFinal) {
             callback(transcript);
-            // recognition.stop();
+            recognition.stop();
 
         }
     });
@@ -27,9 +27,10 @@ function speech(callback){
 }
 
 function speechClick(){
+    console.log("clicked");
+    $('#mytext').text("");
     speech(function(text){
         sendText(text);
-        $('#mytext').text();
         console.log(text);
     });
 }
