@@ -3,7 +3,7 @@ $resize: 100% - 5%; //Container Width
 $gutter: 0.5; //gutter size
 $columns: 12; //number of columns
 $slug: is !default; // change it to col if you're comfortable
-$breakpoint-xs: 12em; // mobile
+$breakpoint-xs: 3em !default; // mobile
 $breakpoint-md:  48em;  // tablets
 $breakpoint-lg: 56.25em; // desktop
 $breakpoint-xlg: 68.75em; // HD
@@ -21,7 +21,6 @@ body {
     overflow: hidden;
   }
   .columns {
-    display: block;
     box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,8 +39,12 @@ body {
   }
   @for $i from 1 through $columns {
     .#{$slug}-#{$i} {
-      width: $width + (100% - $width);
-      margin: +#{$gutter}em 0em 0em +#{$gutter}em;
+      flex: 0 0 auto;
+      box-sizing: border-box;
+      -webkit-box-flex: 0;
+      flex-basis: ($resize/$columns * $i)- $gutter;
+      max-width: ($resize/$columns * $i)- $gutter;
+      margin: +#{$gutter}rem 0rem 0rem +#{$gutter/2}rem;
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }

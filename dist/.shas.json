@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "7bf540057118fb03f136aa1c049484e9c2b234da"
+        "sha": "9996b20c3dccdefbc76d98da1ab33ddcc0a7be4c"
       }
     ],
-    "outputSha": "c7abf0a50addcf6123a541cfb73efcc40ea3f127",
+    "outputSha": "bc579019d1a7a15ab48584e54ae624f562a07956",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -33,10 +33,10 @@
     "inputSha": [
       {
         "file": "scripts/animate.babel.js",
-        "sha": "25c6ed21fa368a487b08d99e5448dcb448cbb3a6"
+        "sha": "66bf474c9cee7d96f65a8e80a1fb9e9da9349121"
       }
     ],
-    "outputSha": "2eea891adb2239be3fd411030ec322ec5813916e",
+    "outputSha": "c4d2b2ef77e854e90d3946a47dc272c76a4a824e",
     "input": "scripts/animate.babel.js",
     "output": [
       "scripts/animate.js.map",
@@ -78,10 +78,10 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "c89b24850625d317d5fbf114e6fa057748524875"
+        "sha": "320dabf243d29d04662d102d3533491a38951c38"
       }
     ],
-    "outputSha": "a8b59e85c3b3f5d7acdb6c2e2cfd056eb81cc73b",
+    "outputSha": "aade2ae5054a69acacf8039529b7f10cdb02878e",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
@@ -107,10 +107,10 @@
     "inputSha": [
       {
         "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+        "sha": "7b9778c7aaee68292c3cd35446b34dbee8a59afb"
       }
     ],
-    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
+    "outputSha": "7b9778c7aaee68292c3cd35446b34dbee8a59afb",
     "input": "styles/_grid.scss",
     "output": [
       "styles/_grid.scss"
@@ -135,10 +135,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "9076b386dcf50634ac055a4552a434b268a4ab6f"
+        "sha": "4ecfdaabdcea20084433aa8d71a8b2150bae417f"
       }
     ],
-    "outputSha": "9076b386dcf50634ac055a4552a434b268a4ab6f",
+    "outputSha": "4ecfdaabdcea20084433aa8d71a8b2150bae417f",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -163,10 +163,10 @@
     "inputSha": [
       {
         "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+        "sha": "44612f5ea9fa25e4adb077bef5a024643b353493"
       }
     ],
-    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
+    "outputSha": "44612f5ea9fa25e4adb077bef5a024643b353493",
     "input": "styles/_variables.scss",
     "output": [
       "styles/_variables.scss"
@@ -181,7 +181,7 @@
       },
       {
         "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+        "sha": "7b9778c7aaee68292c3cd35446b34dbee8a59afb"
       },
       {
         "file": "styles/_reset.scss",
@@ -193,18 +193,18 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "9076b386dcf50634ac055a4552a434b268a4ab6f"
+        "sha": "4ecfdaabdcea20084433aa8d71a8b2150bae417f"
       },
       {
         "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+        "sha": "44612f5ea9fa25e4adb077bef5a024643b353493"
       },
       {
         "file": "styles/_animations.scss",
         "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "90cff2a732bd628bb57d9d688f0db018de1851d7",
+    "outputSha": "6a1c32e7156bc1a37fe384b9976cea2ce61cf488",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
