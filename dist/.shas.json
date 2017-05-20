@@ -19,58 +19,13 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "73cca52e0c8bb21ac23ed843627ad4f701400476"
+        "sha": "6b74d6f1ca7cb8ff0a29e7923f3711446ad20a3a"
       }
     ],
-    "outputSha": "6fa3216d2726ec5b1de0daf5505b55d3aea8d4a8",
+    "outputSha": "53acefc0e679afd082a354c376e0a630b7636224",
     "input": "index.pug",
     "output": [
       "index.html"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "b16bad1a86c9f90ab9a90d21acecc68f707cf3b6"
-      }
-    ],
-    "outputSha": "1a9c08249fbba040794af06736bdc7180c4de1bc",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/at-animate.js",
-        "sha": "f1a1fe2086e932cf18a8a3f7ee304e034a311d83"
-      }
-    ],
-    "outputSha": "55b9a1ee46b7e5711a0f78f6ab89d1de5012db04",
-    "input": "scripts/at-animate.js",
-    "output": [
-      "scripts/at-animate.js.map",
-      "scripts/at-animate.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "21124cdcff2aeb8661a6ae17b52ebe0daabfea7e"
-      }
-    ],
-    "outputSha": "971c29d2398d3371164c2bdbfa798249ad0c51b3",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
     ]
   },
   {
@@ -92,10 +47,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "bd3530671f2496fd2cf806fb48745abecfb030f3"
+        "sha": "c45aa5dded963f79d9fdc06d15241af84784dd06"
       }
     ],
-    "outputSha": "bd3530671f2496fd2cf806fb48745abecfb030f3",
+    "outputSha": "c45aa5dded963f79d9fdc06d15241af84784dd06",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -142,7 +97,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "bd3530671f2496fd2cf806fb48745abecfb030f3"
+        "sha": "c45aa5dded963f79d9fdc06d15241af84784dd06"
       },
       {
         "file": "styles/_typo.scss",
@@ -158,6 +113,21 @@
     "output": [
       "styles/main.css.map",
       "styles/main.css"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "21124cdcff2aeb8661a6ae17b52ebe0daabfea7e"
+      }
+    ],
+    "outputSha": "971c29d2398d3371164c2bdbfa798249ad0c51b3",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
     ]
   }
 ]

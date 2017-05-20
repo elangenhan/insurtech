@@ -63,7 +63,7 @@ app.post('/conversation', function(req, res) {
 });
 
 app.post('/visualRecognition', function(req, res) {
-
+	
 });
 
 app.listen(port);
