@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "ca652d05225b518875603f68ba529e377f1a4202"
+        "sha": "2fdb5bde0189f6453cd04bd43207fc5546ce4faf"
       }
     ],
-    "outputSha": "4aeba169674292287acf64d0f061e5297dff84a2",
+    "outputSha": "28bbc7046269a255366641adf5d04bbb589c3685",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -91,14 +91,14 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_grid.scss",
-        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
+        "file": "styles/_styles.scss",
+        "sha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1"
       }
     ],
-    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
-    "input": "styles/_grid.scss",
+    "outputSha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1",
+    "input": "styles/_styles.scss",
     "output": [
-      "styles/_grid.scss"
+      "styles/_styles.scss"
     ]
   },
   {
@@ -119,14 +119,14 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_styles.scss",
-        "sha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1"
+        "file": "styles/_grid.scss",
+        "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
       }
     ],
-    "outputSha": "af2baea44d6c685c3c0c7ed7968efe4049cbf8c1",
-    "input": "styles/_styles.scss",
+    "outputSha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221",
+    "input": "styles/_grid.scss",
     "output": [
-      "styles/_styles.scss"
+      "styles/_grid.scss"
     ]
   },
   {
@@ -141,20 +141,6 @@
     "input": "styles/_typo.scss",
     "output": [
       "styles/_typo.scss"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
-      }
-    ],
-    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
-    "input": "styles/_variables.scss",
-    "output": [
-      "styles/_variables.scss"
     ]
   },
   {
@@ -194,6 +180,20 @@
     "output": [
       "styles/main.css.map",
       "styles/main.css"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_variables.scss",
+        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+      }
+    ],
+    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
+    "input": "styles/_variables.scss",
+    "output": [
+      "styles/_variables.scss"
     ]
   }
 ]
