@@ -7,6 +7,7 @@ $(document).ready(() => {
 function init() {
 	$(".rightButton").hide();
 	$(".footer").hide();
+	$(".messageBox").hide();
 }
 
 function handleClickStart() {
@@ -22,6 +23,8 @@ function handleClick() {
 
 function fadeInFooter() {
 	$(".jumboButton").fadeOut(1000);
+	$(".startButton").hide();
+	$(".messageBox").show();
 	$(".footer").addClass('active');
 	$(".footer").fadeIn(1000);
     $(".rightButton").fadeIn(1000);

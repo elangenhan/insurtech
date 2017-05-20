@@ -1,0 +1,1 @@
+{"version":3,"sources":["fileChooser.src.js"],"names":["handleFiles","fileList","this","files","console","log","input","$","addEventListener"],"mappings":"AAGA,QAASA,eACP,GAAIC,GAAWC,KAAKC,KAEpBC,SAAQC,IAAIJ,GANd,GAAIK,OAAQC,EAAE,SACdD,OAAME,iBAAiB,SAAUR,aAAa","file":"fileChooser.js"}

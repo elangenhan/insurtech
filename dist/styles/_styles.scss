@@ -39,6 +39,7 @@ body {
 }
 
 .footer {
+	display: none;
 	.output-box {
 		border-bottom: 1px solid #efefef;
 		max-width: 100%;
@@ -53,7 +54,7 @@ body {
 }
 
 .wrapper {
-	&> .is-12 {
+	&> .startButton {
 		height: 78vh;
 	}
 }
@@ -90,5 +91,17 @@ body {
 	}
 	&.button--state-danger {
 		color: #900;
+	}
+}
+
+
+.messageBox {
+	display: none;
+	transition: display 2s;
+	.left {
+		border-left: 4px solid #fff;
+	}
+	.right {
+		border-right: 4px solid #444;
 	}
 }
