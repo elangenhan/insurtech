@@ -19,13 +19,58 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "9f7ebddefaf120329421a67b446d0a3bd70ea4ab"
+        "sha": "8605df801de5742555b8ac0de4370b5a8c43c401"
       }
     ],
-    "outputSha": "d5b5f2645ca9f13d19e740851eac895f5ec566e6",
+    "outputSha": "81267528c3c7e0a8c6cd80904a25b7d758171fb8",
     "input": "index.pug",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/animate.babel.js",
+        "sha": "c6a3559e999f9d128d705c72bf7b326c8a9453b7"
+      }
+    ],
+    "outputSha": "32f5eca06a71fddab831a34cf4fa7dd9c230a316",
+    "input": "scripts/animate.babel.js",
+    "output": [
+      "scripts/animate.js.map",
+      "scripts/animate.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+      }
+    ],
+    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/speech.babel.js",
+        "sha": "30b3a7fbd77fc6e14fe988953761b8f3f5c24f88"
+      }
+    ],
+    "outputSha": "da769bd3714920c641b7d47b40a273f187f3cd29",
+    "input": "scripts/speech.babel.js",
+    "output": [
+      "scripts/speech.js.map",
+      "scripts/speech.js"
     ]
   },
   {
@@ -33,10 +78,10 @@
     "inputSha": [
       {
         "file": "styles/_animations.scss",
-        "sha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1"
+        "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1",
+    "outputSha": "0997398a53b4f3dfac97821e363ba533bae96a30",
     "input": "styles/_animations.scss",
     "output": [
       "styles/_animations.scss"
@@ -60,11 +105,25 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_styles.scss",
-        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
+        "file": "styles/_reset.scss",
+        "sha": "84bccf27f26dd7683d651a5626481a31629b330a"
       }
     ],
-    "outputSha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f",
+    "outputSha": "84bccf27f26dd7683d651a5626481a31629b330a",
+    "input": "styles/_reset.scss",
+    "output": [
+      "styles/_reset.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_styles.scss",
+        "sha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99"
+      }
+    ],
+    "outputSha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -103,7 +162,15 @@
     "inputSha": [
       {
         "file": "styles/main.scss",
-        "sha": "c706128f324b0a212c6ebd672d483cc7541c9e1d"
+        "sha": "7820cc1b4b38728709c6c321543fa508b1080f33"
+      },
+      {
+        "file": "styles/_animations.scss",
+        "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
+      },
+      {
+        "file": "styles/_reset.scss",
+        "sha": "84bccf27f26dd7683d651a5626481a31629b330a"
       },
       {
         "file": "styles/_grid.scss",
@@ -111,7 +178,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
+        "sha": "cc5bd97c37a8b2665fac67d7f9bbb7c37db26d99"
       },
       {
         "file": "styles/_typo.scss",
@@ -120,62 +187,13 @@
       {
         "file": "styles/_variables.scss",
         "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
-      },
-      {
-        "file": "styles/_animations.scss",
-        "sha": "1ee2d8ddea38f04e6107de059a0e580adbefe5e1"
       }
     ],
-    "outputSha": "0c104bb932462ab95e4c34936f647de545d8d323",
+    "outputSha": "9360c527ce2c3eef90ef78b0ba3b2e7a3b989a45",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
       "styles/main.css"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/animate.babel.js",
-        "sha": "73fb657397069c405fb01c55e108228f834c94ba"
-      }
-    ],
-    "outputSha": "284e0fc32c3bf0f5f1be4e76efd2407a4bf9515c",
-    "input": "scripts/animate.babel.js",
-    "output": [
-      "scripts/animate.js.map",
-      "scripts/animate.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
-      }
-    ],
-    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/speech.babel.js",
-        "sha": "30b3a7fbd77fc6e14fe988953761b8f3f5c24f88"
-      }
-    ],
-    "outputSha": "da769bd3714920c641b7d47b40a273f187f3cd29",
-    "input": "scripts/speech.babel.js",
-    "output": [
-      "scripts/speech.js.map",
-      "scripts/speech.js"
     ]
   }
 ]
