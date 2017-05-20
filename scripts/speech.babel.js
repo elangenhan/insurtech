@@ -66,7 +66,7 @@ function sendText(text){
 
             if (context.uploadPic == "true") {
                 context.uploadPic = "false";
-                fileTrigger();
+                triggerUrlField();
             }
         },
         error: function(err){
@@ -75,28 +75,19 @@ function sendText(text){
     });
 }
 
+function triggerUrlField() {
+    //trigger url field stuff
 
-function fileTrigger(){
-    console.log("triggered");
-    $("#watsonFile").click();
+    sendUrl(url);
 }
 
-function uploadPic() {
-
-    $("#watsonFile").click();
-    $("#watsonFile").change(function(data){
-        console.log($("#watsonFile"));
-    });
-}
-
-
-function sendFile(pic){
+function sendUrl(url){
     $.ajax({
         type: "POST",
         url: "/visualRecognition",
         data: {
             context: JSON.stringify(context),
-            pic: pic
+            url: url
         },
         success: function(res){
             var resp = res.output.text[0];
@@ -117,10 +108,3 @@ function sendFile(pic){
         }
     });
 }
-
-$(document).keypress(function(e) {
-    console.log(e.which);
-  if(e.which == 102) {
-    uploadPic();
-  }
-});
