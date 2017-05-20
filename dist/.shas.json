@@ -29,51 +29,6 @@
     ]
   },
   {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/animate.babel.js",
-        "sha": "c6a3559e999f9d128d705c72bf7b326c8a9453b7"
-      }
-    ],
-    "outputSha": "32f5eca06a71fddab831a34cf4fa7dd9c230a316",
-    "input": "scripts/animate.babel.js",
-    "output": [
-      "scripts/animate.js.map",
-      "scripts/animate.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
-      }
-    ],
-    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/speech.babel.js",
-        "sha": "30b3a7fbd77fc6e14fe988953761b8f3f5c24f88"
-      }
-    ],
-    "outputSha": "da769bd3714920c641b7d47b40a273f187f3cd29",
-    "input": "scripts/speech.babel.js",
-    "output": [
-      "scripts/speech.js.map",
-      "scripts/speech.js"
-    ]
-  },
-  {
     "type": "::map::minify",
     "inputSha": [
       {
@@ -144,20 +99,6 @@
     ]
   },
   {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/_variables.scss",
-        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
-      }
-    ],
-    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
-    "input": "styles/_variables.scss",
-    "output": [
-      "styles/_variables.scss"
-    ]
-  },
-  {
     "type": "node-sass@4.5.3::map::minify",
     "inputSha": [
       {
@@ -194,6 +135,65 @@
     "output": [
       "styles/main.css.map",
       "styles/main.css"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_variables.scss",
+        "sha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f"
+      }
+    ],
+    "outputSha": "c76ab240fcfbfe12d0b3d57c0a674be4ded6aa6f",
+    "input": "styles/_variables.scss",
+    "output": [
+      "styles/_variables.scss"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/animate.babel.js",
+        "sha": "c6a3559e999f9d128d705c72bf7b326c8a9453b7"
+      }
+    ],
+    "outputSha": "32f5eca06a71fddab831a34cf4fa7dd9c230a316",
+    "input": "scripts/animate.babel.js",
+    "output": [
+      "scripts/animate.js.map",
+      "scripts/animate.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+      }
+    ],
+    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/speech.babel.js",
+        "sha": "30b3a7fbd77fc6e14fe988953761b8f3f5c24f88"
+      }
+    ],
+    "outputSha": "da769bd3714920c641b7d47b40a273f187f3cd29",
+    "input": "scripts/speech.babel.js",
+    "output": [
+      "scripts/speech.js.map",
+      "scripts/speech.js"
     ]
   }
 ]
