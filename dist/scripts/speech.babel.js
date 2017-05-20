@@ -101,10 +101,6 @@ function sendUrl(url){
             var msg = new SpeechSynthesisUtterance(resp);
             window.speechSynthesis.speak(msg);
 
-            if (context.uploadPic) {
-                context.uploadPic = false;
-                uploadPic();
-            }
         },
         error: function(err){
             console.log(err);

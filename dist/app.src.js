@@ -61,6 +61,7 @@ app.post('/conversation', function(req, res) {
 });
 
 app.post('/visualRecognition', function(req, response) {
+    var body = req.body;
 	var context = "";
     body.context != null ? context = JSON.parse(body.context) : context = {}
     var url = req.body.url;
@@ -89,7 +90,7 @@ app.post('/visualRecognition', function(req, response) {
                 conversation.message({
                     workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
                     input: {
-                        'text': ''
+                        'text': 'photo'
                     },
                     context: context
                 }, function(err, res) {
@@ -113,7 +114,7 @@ app.post('/visualRecognition', function(req, response) {
                             conversation.message({
                                 workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
                                 input: {
-                                    'text': ''
+                                    'text': 'photo'
                                 },
                                 context: context
                             }, function(err, res) {
@@ -130,7 +131,7 @@ app.post('/visualRecognition', function(req, response) {
                             conversation.message({
                                 workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
                                 input: {
-                                    'text': ''
+                                    'text': 'photo'
                                 },
                                 context: context
                             }, function(err, res) {
