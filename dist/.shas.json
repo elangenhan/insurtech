@@ -19,10 +19,10 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "ede4421fee983a394496ae8d4f92eebbc09ffcae"
+        "sha": "cba46716008e223e968f35bc3fde5715f294ba44"
       }
     ],
-    "outputSha": "43901483aae9b6543b18a026d43bcb69d489b7ce",
+    "outputSha": "461953779e0bb65df5fb7c999910456067085804",
     "input": "index.pug",
     "output": [
       "index.html"
@@ -41,21 +41,6 @@
     "output": [
       "scripts/animate.js.map",
       "scripts/animate.js"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/fileChooser.js",
-        "sha": "c3862479d66e1bc591dedcd13aa641aad9a77ea3"
-      }
-    ],
-    "outputSha": "0396a5d232dab17f28e8c752847f98fea6232971",
-    "input": "scripts/fileChooser.js",
-    "output": [
-      "scripts/fileChooser.js.map",
-      "scripts/fileChooser.js"
     ]
   },
   {
@@ -135,10 +120,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "56d9a02aa09457c617454524a54bbe2da6d72940"
+        "sha": "8076954159108e6af3eb905d79943270a9deba37"
       }
     ],
-    "outputSha": "56d9a02aa09457c617454524a54bbe2da6d72940",
+    "outputSha": "8076954159108e6af3eb905d79943270a9deba37",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -193,7 +178,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "56d9a02aa09457c617454524a54bbe2da6d72940"
+        "sha": "8076954159108e6af3eb905d79943270a9deba37"
       },
       {
         "file": "styles/_variables.scss",
@@ -204,7 +189,7 @@
         "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "ddf8af7ca9afe7fe33fb836c7d0b9ad0cc22235b",
+    "outputSha": "ffb250d7778eea735c78827b06cbbaf4dbb4bff3",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
