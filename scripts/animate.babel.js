@@ -8,6 +8,7 @@ function init() {
 	$(".rightButton").hide();
 	$(".footer").hide();
 	$(".messageBox").hide();
+	$('#watsonFile').hide();
 }
 
 function handleClickStart() {

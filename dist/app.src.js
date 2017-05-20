@@ -61,7 +61,8 @@ app.post('/conversation', function(req, res) {
 });
 
 app.post('/visualRecognition', function(req, response) {
-	var context = req.body.context;
+	var context = "";
+    body.context != null ? context = JSON.parse(body.context) : context = {}
     var url = req.body.url;
 
     var image = url;

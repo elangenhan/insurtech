@@ -81,8 +81,7 @@ function sendText(text){
 
 function triggerUrlField() {
     //trigger url field stuff
-
-    sendUrl(url);
+    $('#watsonFile').show();
 }
 
 function sendUrl(url){
@@ -112,3 +111,14 @@ function sendUrl(url){
         }
     });
 }
+
+
+$('#watsonFile').on('keypress', function (e) {
+     if(e.which === 13){
+        let watsonFileUrl = $('#watsonFile').val();
+        sendUrl(watsonFileUrl);
+        $('#watsonFile').hide();
+
+        console.log('Pressed');
+     }
+});
