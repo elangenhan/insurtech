@@ -24,7 +24,7 @@ function handleClick() {
 function fadeInFooter() {
 	$(".jumboButton").fadeOut(1000);
 	$(".startButton").hide();
-	$(".messageBox").show();
+	$(".messageBox").css({'display':'inline-flex'});
 	$(".footer").addClass('active');
 	$(".footer").fadeIn(1000);
     $(".rightButton").fadeIn(1000);
