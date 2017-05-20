@@ -19,13 +19,73 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "9024ae59caabaf4ded11f429aeed7aea19d2ae34"
+        "sha": "7bf540057118fb03f136aa1c049484e9c2b234da"
       }
     ],
-    "outputSha": "b496b4198634f6a8b2cf28c8e126b7fa9055338d",
+    "outputSha": "c7abf0a50addcf6123a541cfb73efcc40ea3f127",
     "input": "index.pug",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/animate.babel.js",
+        "sha": "25c6ed21fa368a487b08d99e5448dcb448cbb3a6"
+      }
+    ],
+    "outputSha": "2eea891adb2239be3fd411030ec322ec5813916e",
+    "input": "scripts/animate.babel.js",
+    "output": [
+      "scripts/animate.js.map",
+      "scripts/animate.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/fileChooser.js",
+        "sha": "f2c063a5d2fe277e10d64ccf3139af395fc4ffb0"
+      }
+    ],
+    "outputSha": "5cf3d9d12602bc18a16f6cb50030021b3105817e",
+    "input": "scripts/fileChooser.js",
+    "output": [
+      "scripts/fileChooser.js.map",
+      "scripts/fileChooser.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
+      }
+    ],
+    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "babel-core@6.24.1::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/speech.babel.js",
+        "sha": "c89b24850625d317d5fbf114e6fa057748524875"
+      }
+    ],
+    "outputSha": "a8b59e85c3b3f5d7acdb6c2e2cfd056eb81cc73b",
+    "input": "scripts/speech.babel.js",
+    "output": [
+      "scripts/speech.js.map",
+      "scripts/speech.js"
     ]
   },
   {
@@ -75,10 +135,10 @@
     "inputSha": [
       {
         "file": "styles/_styles.scss",
-        "sha": "b7fbe22a6c8b7d4d87b3b530832d04153dcb5c0f"
+        "sha": "9076b386dcf50634ac055a4552a434b268a4ab6f"
       }
     ],
-    "outputSha": "b7fbe22a6c8b7d4d87b3b530832d04153dcb5c0f",
+    "outputSha": "9076b386dcf50634ac055a4552a434b268a4ab6f",
     "input": "styles/_styles.scss",
     "output": [
       "styles/_styles.scss"
@@ -133,7 +193,7 @@
       },
       {
         "file": "styles/_styles.scss",
-        "sha": "b7fbe22a6c8b7d4d87b3b530832d04153dcb5c0f"
+        "sha": "9076b386dcf50634ac055a4552a434b268a4ab6f"
       },
       {
         "file": "styles/_variables.scss",
@@ -144,71 +204,11 @@
         "sha": "0997398a53b4f3dfac97821e363ba533bae96a30"
       }
     ],
-    "outputSha": "5bacc47835d5a2bb530ceccdba3bd29b024874af",
+    "outputSha": "90cff2a732bd628bb57d9d688f0db018de1851d7",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
       "styles/main.css"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/animate.babel.js",
-        "sha": "25c6ed21fa368a487b08d99e5448dcb448cbb3a6"
-      }
-    ],
-    "outputSha": "2eea891adb2239be3fd411030ec322ec5813916e",
-    "input": "scripts/animate.babel.js",
-    "output": [
-      "scripts/animate.js.map",
-      "scripts/animate.js"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/fileChooser.js",
-        "sha": "f2c063a5d2fe277e10d64ccf3139af395fc4ffb0"
-      }
-    ],
-    "outputSha": "5cf3d9d12602bc18a16f6cb50030021b3105817e",
-    "input": "scripts/fileChooser.js",
-    "output": [
-      "scripts/fileChooser.js.map",
-      "scripts/fileChooser.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.babel.js",
-        "sha": "b23c609faeb8e2e4e4c09b3bb23ad52f55b70dc1"
-      }
-    ],
-    "outputSha": "1aedba344b0c764bca157c71b9ca0fd61ba3ef40",
-    "input": "scripts/main.babel.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
-    ]
-  },
-  {
-    "type": "babel-core@6.24.1::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/speech.babel.js",
-        "sha": "28fc38dc1ba8d7115e3a074f16f06c568c7b2533"
-      }
-    ],
-    "outputSha": "04c75429b9c6df7df1cb0139b64b59edd49bfbbc",
-    "input": "scripts/speech.babel.js",
-    "output": [
-      "scripts/speech.js.map",
-      "scripts/speech.js"
     ]
   }
 ]
