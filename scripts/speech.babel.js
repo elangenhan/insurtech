@@ -68,9 +68,9 @@ function sendText(text){
             var msg = new SpeechSynthesisUtterance(resp);
             window.speechSynthesis.speak(msg);
 
-            if (context.uploadPic) {
-                context.uploadPic = false;
-                uploadPic();
+            if (context.uploadPic == "true") {
+                context.uploadPic = "false";
+                triggerUrlField();
             }
         },
         error: function(err){
@@ -79,15 +79,19 @@ function sendText(text){
     });
 }
 
-function uploadPic() {
-    var pic;
+function triggerUrlField() {
+    //trigger url field stuff
 
+    sendUrl(url);
+}
+
+function sendUrl(url){
     $.ajax({
         type: "POST",
         url: "/visualRecognition",
         data: {
             context: JSON.stringify(context),
-            pic: pic
+            url: url
         },
         success: function(res){
             var resp = res.output.text[0];

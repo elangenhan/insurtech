@@ -60,20 +60,18 @@ app.post('/conversation', function(req, res) {
     });
 });
 
-app.post('/visualRecognition', function(req, res) {
+app.post('/visualRecognition', function(req, response) {
 	var context = req.body.context;
-	
-    context.actionUploadCar = null;
-    context.actionUploadAccident = null;
+    var url = req.body.url;
 
-    var image = payload.message.attachments[0].payload.url;
+    var image = url;
     var paramsCarFruits = {
-        url: payload.message.attachments[0].payload.url,
+        url: url,
         classifier_ids: ['fruits_1741951189']
     };
     // should be empty = car
     var paramsCarAccident = {
-        url: payload.message.attachments[0].payload.url,
+        url: url,
         classifier_ids: ['accident_164647303']
     };
 
@@ -87,9 +85,20 @@ app.post('/visualRecognition', function(req, res) {
 
                 context.isCar = false;
                 context.isAccident = false;
-                saveContext(recipient, context);
-                sendToWatson('', reply, actions, recipient);
-                //its a car
+                conversation.message({
+                    workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+                    input: {
+                        'text': ''
+                    },
+                    context: context
+                }, function(err, res) {
+                    if (err) {
+                        console.log('error:', err);
+                    } else {
+                        response.setHeader('Content-Type', 'application/json');
+                        response.send(JSON.stringify(res));
+                    }
+                });
             } else {
                 visual_recognition_caraccident.classify(paramsCarAccident, function(err, res) {
                     if (err) {
@@ -98,15 +107,39 @@ app.post('/visualRecognition', function(req, res) {
                         console.log(JSON.stringify(res, null, 2));
 
                         if (res.images[0].classifiers.length > 0) {
-                            context.isCar = false;
+                            context.isCar = true;
                             context.isAccident = true;
-                            saveContext(recipient, context);
-                            sendToWatson('', reply, actions, recipient);
+                            conversation.message({
+                                workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+                                input: {
+                                    'text': ''
+                                },
+                                context: context
+                            }, function(err, res) {
+                                if (err) {
+                                    console.log('error:', err);
+                                } else {
+                                    response.setHeader('Content-Type', 'application/json');
+                                    response.send(JSON.stringify(res));
+                                }
+                            });
                         } else {
                             context.isCar = true;
                             context.isAccident = false;
-                            saveContext(recipient, context);
-                            sendToWatson('', reply, actions, recipient);
+                            conversation.message({
+                                workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
+                                input: {
+                                    'text': ''
+                                },
+                                context: context
+                            }, function(err, res) {
+                                if (err) {
+                                    console.log('error:', err);
+                                } else {
+                                    response.setHeader('Content-Type', 'application/json');
+                                    response.send(JSON.stringify(res));
+                                }
+                            });
                         }
                     }
                 });
