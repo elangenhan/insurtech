@@ -44,10 +44,6 @@ app.post('/conversation', function(req, res) {
     var context = "";
     body.context != null ? context = JSON.parse(body.context) : context = {}
 
-    console.log(body);
-
-    console.log(context);
-
     conversation.message({
         workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
         input: {

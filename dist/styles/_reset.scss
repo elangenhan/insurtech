@@ -2,7 +2,7 @@ button {
 	background: none;
     border: 0;
     color: inherit;
-    cursor: pointer;
+    cursor: pointer !important;
     font: inherit;
     line-height: normal;
     overflow: visible;
@@ -11,8 +11,5 @@ button {
     user-select: none; /* for button */
     &:focus {
     	outline:0;
-    }
-    &*{
-    	cursor: pointer;
     }
 }
