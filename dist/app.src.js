@@ -61,6 +61,7 @@ app.post('/conversation', function(req, res) {
 });
 
 app.post('/visualRecognition', function(req, response) {
+    var body = req.body;
 	var context = "";
     body.context != null ? context = JSON.parse(body.context) : context = {}
     var url = req.body.url;
@@ -84,12 +85,12 @@ app.post('/visualRecognition', function(req, response) {
 
             if (res.images[0].classifiers.length > 0) {
 
-                context.isCar = false;
-                context.isAccident = false;
+                context.isCar = "false";
+                context.isAccident = "false";
                 conversation.message({
                     workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
                     input: {
-                        'text': ''
+                        'text': 'photo'
                     },
                     context: context
                 }, function(err, res) {
@@ -108,12 +109,12 @@ app.post('/visualRecognition', function(req, response) {
                         console.log(JSON.stringify(res, null, 2));
 
                         if (res.images[0].classifiers.length > 0) {
-                            context.isCar = true;
-                            context.isAccident = true;
+                            context.isCar = "true";
+                            context.isAccident = "true";
                             conversation.message({
                                 workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
                                 input: {
-                                    'text': ''
+                                    'text': 'photo'
                                 },
                                 context: context
                             }, function(err, res) {
@@ -125,12 +126,12 @@ app.post('/visualRecognition', function(req, response) {
                                 }
                             });
                         } else {
-                            context.isCar = true;
-                            context.isAccident = false;
+                            context.isCar = "true";
+                            context.isAccident = "false";
                             conversation.message({
                                 workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
                                 input: {
-                                    'text': ''
+                                    'text': 'photo'
                                 },
                                 context: context
                             }, function(err, res) {
