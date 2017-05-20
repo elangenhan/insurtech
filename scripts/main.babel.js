@@ -6,6 +6,7 @@ function speechClick(){
     speech(function(text){
         sendText(text);
         console.log(text);
+        $('#mytext').text(text);
     });
 }
 
