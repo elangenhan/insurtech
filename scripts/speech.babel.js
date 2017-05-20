@@ -31,14 +31,16 @@ function speechClick(){
     });
 }
 
+var context;
 
-function sendText(text){
+function sendText(text, context){
     $.ajax({
         type: "POST",
         url: "/conversation",
-        data: {text: text},
+        data: {text: text, context: context},
         success: function(res){
             var resp = res.output.text[0];
+            context = res.context;
             console.log(resp);
 
             var msg = new SpeechSynthesisUtterance(resp);

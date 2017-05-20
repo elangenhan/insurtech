@@ -37,14 +37,9 @@ var visual_recognition_caraccident = watson.visual_recognition({
     version: 'v3'
 });
 
-var context = {};
-context.actionUploadCar = null;
-context.isFruit = null;
-context.carDamaged = null;
-context.isValid = null;
-
 app.post('/conversation', function(req, res) {
     var message = req.body.message;
+    var context = req.body.context;
 
     conversation.message({
         workspace_id: '9f919328-5d6f-464b-a2ff-ea9bb86f8c2e',
@@ -63,9 +58,11 @@ app.post('/conversation', function(req, res) {
 });
 
 app.post('/visualRecognition', function(req, res) {
+	var context = req.body.context;
+	
     context.actionUploadCar = null;
     context.actionUploadAccident = null;
-    
+
     var image = payload.message.attachments[0].payload.url;
     var paramsCarFruits = {
         url: payload.message.attachments[0].payload.url,

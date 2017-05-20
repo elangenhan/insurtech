@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "app.js",
-        "sha": "1bda0942b4d84870dbf66994b66a3b5c01db3a34"
+        "sha": "650957791cbd324a337b18b1072d79c5b85b48ef"
       }
     ],
-    "outputSha": "fa10aee49cde9c80c6f831aff1284cf40d133466",
+    "outputSha": "b94a40b4d0c636aa59917d1bd6f9fa8c819503ea",
     "input": "app.js",
     "output": [
       "app.js.map",
@@ -63,10 +63,10 @@
     "inputSha": [
       {
         "file": "scripts/speech.babel.js",
-        "sha": "1064377a5a49966789cb5d979ef6239793b84237"
+        "sha": "2258bf6fea5109d116ff2203710ab1330efbe61c"
       }
     ],
-    "outputSha": "3b27a3b67ecb8adbb7e668cf8759b5f2738304e5",
+    "outputSha": "ef4a89a298611de0ef3141c0e69fad067e95801b",
     "input": "scripts/speech.babel.js",
     "output": [
       "scripts/speech.js.map",
@@ -91,20 +91,6 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/_styles.scss",
-        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
-      }
-    ],
-    "outputSha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f",
-    "input": "styles/_styles.scss",
-    "output": [
-      "styles/_styles.scss"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
         "file": "styles/_grid.scss",
         "sha": "785cb44cd7a9b8cb38bf7de924ca0295c4778221"
       }
@@ -113,6 +99,20 @@
     "input": "styles/_grid.scss",
     "output": [
       "styles/_grid.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/_styles.scss",
+        "sha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f"
+      }
+    ],
+    "outputSha": "1a27c5a382d4117c63e22ef5f7c52c2d30ea984f",
+    "input": "styles/_styles.scss",
+    "output": [
+      "styles/_styles.scss"
     ]
   },
   {
